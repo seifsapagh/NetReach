@@ -1,5 +1,5 @@
 import type { StoreProduct } from '../types/component.types';
-import twiter from '../../assets/twitter.avif';
+import twitter from '../../assets/twitter.avif';
 import instagram from '../../assets/instagram.avif';
 import instagramTool from '../../assets/instagram-tool.avif';
 import twiterTool from '../../assets/twitter-tool.avif';
@@ -12,7 +12,7 @@ export const STORE_PRODUCTS: StoreProduct[] = [
     name: 'X/Twitter',
     description: '2018-2024 Old Twitter/X Account with MAIL ACCESS',
     price: 4,
-    image: twiter,
+    image: twitter,
   },
   {
     id: 'acc-02',
@@ -20,7 +20,7 @@ export const STORE_PRODUCTS: StoreProduct[] = [
     name: 'X/Twitter',
     description: '2007 to 2016 Old Twitter/X Account with MAIL ACCESS',
     price: 5,
-    image: twiter,
+    image: twitter,
   },
   {
     id: 'acc-03',
