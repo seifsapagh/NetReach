@@ -78,6 +78,7 @@ export const CheckoutPage: React.FC = () => {
       if (!response.ok) throw new Error('Gateway Error');
 
       const data = await response.json();
+      console.log(data);
 
       if (data.invoice_url) {
         showToast(
@@ -87,7 +88,7 @@ export const CheckoutPage: React.FC = () => {
         );
         // Delay redirect slightly so user can read the success toast
         setTimeout(() => {
-          window.location.assign(data.invoice_url);
+          window.location.assign(data.url);
         }, 800);
       } else {
         throw new Error('Invalid response');
