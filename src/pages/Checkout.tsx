@@ -64,7 +64,7 @@ export const CheckoutPage: React.FC = () => {
 
     try {
       const response = await fetch(
-        'https://yourdomain.com/api/payments/create',
+        'https://notreach.runasp.net/api/NowPay/Create',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
