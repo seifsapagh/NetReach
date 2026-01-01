@@ -1,3 +1,4 @@
+import { ShieldCheck, Lock, TrendingUp } from 'lucide-react';
 import { PerformanceCard } from './PerformanceCard';
 
 export const HeroSection: React.FC = () => {
@@ -13,21 +14,31 @@ export const HeroSection: React.FC = () => {
                 Elite Outreach
               </span>
             </h1>
-            <p className="text-lg lg:text-xl text-slate-400 leading-relaxed max-w-2xl font-medium">
+            <p className="text-lg text-[1.3rem] text-slate-400 leading-relaxed max-w-2xl font-medium">
               We’ve eliminated the noise. NetReach operates in the background,
               building compliant social funnels that convert. No dashboards. No
               friction. Just results.
             </p>
-            <div className="flex flex-wrap gap-x-8 gap-y-2 text-[12px] uppercase tracking-[0.2em] font-bold text-slate-500">
-              <span className="flex items-center gap-2">
-                <span className="h-2 w-2 rounded-full bg-purple-500" />
-                Not Affiliated with X or Meta
-              </span>
-              <span className="flex items-center gap-2">
-                <span className="h-2 w-2 rounded-full bg-purple-500" />
-                Privacy-First Architecture
-              </span>
-            </div>
+            
+        <div className="flex flex-col gap-x-10 gap-y-4 text-[13px] uppercase tracking-[0.18em] font-bold text-slate-400">
+          
+          <span className="flex items-center gap-3">
+            <ShieldCheck className="w-4 h-4 text-purple-400" />
+            Your accounts stay protected
+          </span>
+
+          <span className="flex items-center gap-3">
+            <Lock className="w-4 h-4 text-purple-400" />
+            Privacy-first infrastructure
+          </span>
+
+          <span className="flex items-center gap-3">
+            <TrendingUp className="w-4 h-4 text-purple-400" />
+            High reply rates
+          </span>
+
+        </div>
+
           </div>
 
           <div className="flex justify-center lg:justify-end animate-in fade-in slide-in-from-right-8 duration-1000">
