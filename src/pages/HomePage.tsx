@@ -13,8 +13,8 @@ export const HomePage: React.FC = () => {
       <HeroSection />
       <FeaturesSection />
       <HowItWorksSection />
-      <Contact />
       <FAQSection />
+      <Contact />
       <FooterCTA />
     </>
   );
